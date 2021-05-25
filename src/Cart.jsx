@@ -9,13 +9,13 @@ const Cart = ({price, name, description, image}) => {
 
   
   return (
-    <PopCard 
+  
+     <PopCard 
       price={price}
       name={name}
       image={image}
       description={description}
       />
-    
   );
 };
 

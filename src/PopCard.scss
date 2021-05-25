@@ -21,12 +21,23 @@
 //   margin: 1em 1em 1em 2em;
 //   width: 100%;
 // }
-// .card__image{
-//     max-height: 200px;
-//     width: 100%;
-//     object-fit: contain;
-//     margin-bottom: 15px;
-// }
+.card__image{
+    max-height: 150px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+
+}
+
+.price {
+    text-align: center;
+    font-style: bold;
+}
+
+.name {
+ font-style: italic;
+ text-align: center;
+}
 
 // * {
 //     margin: auto;

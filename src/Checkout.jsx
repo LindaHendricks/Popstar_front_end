@@ -10,9 +10,7 @@ const Checkout = ({cart}) => {
     return (
         <div className="checkout">
             
-            <div className="checkout__left">
-                <img src="https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/images/media/images/banner-ads-examples-ncino.jpg" alt="" className="checkout__ad" />
-                
+            <div className="checkout__left">                
                 <div>
                     <h2 className="checkout__title">
                         Your Shopping Cart

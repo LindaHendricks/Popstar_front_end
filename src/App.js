@@ -62,7 +62,7 @@ console.log(currentUser)
         
         <Switch>
           <Route path="/popContainer">
-          <Header />
+          <Header cart={cart}/>
             <PopContainer cart={cart} addToCart={addToCart} currentUser={currentUser} items={items} deleteItem={deleteItem} addItem={addItem} updateItem={updateItem}/>
       </Route>
       <Route path="/login">

@@ -45,7 +45,7 @@ function PopCard({
   }
 
   const CartButton = () => {
-    return <button onClick={handleAddCart}>Add to Cart</button>;
+    return <button className="add_to_card" onClick={handleAddCart}>Add to Cart</button>;
   };
 
   const [item, setItem] = useState({});
@@ -62,13 +62,15 @@ function PopCard({
     setUpdatedItem(!updatedItem);
   };
   return (
+    
     <li className="card">
-      <p>{name}</p>
-      <p>$ {price}</p>
+     
       <img className="card__image" src={image} alt={name} />
+      <p className="name">{name}</p>
+      <p className="price">$ {price}</p>
       {currentUser ? (
         <span>
-          <button className="cart__button" onClick={handleClick}>
+          <button className="cart_update_button" onClick={handleClick}>
             {" "}
             Update{" "}
           </button>
@@ -79,7 +81,7 @@ function PopCard({
       ) : (
         <CartButton />
       )}
-
+      
       {/* <span><CancelIcon className="delete__button"/></span> */}
       {updatedItem ? <EditPopCard updateItem={updateItem} id={id} /> : null}
     </li>
